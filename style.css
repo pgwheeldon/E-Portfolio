@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@media (max-width:786px) {
+@media (max-width: 786px) {
   nav {
     height: 68px;
   }
@@ -11,12 +11,12 @@
     font-size: 18px;
   }
   .language {
-    width: calc(100%/3)
+    width: calc(100% / 3);
   }
   .project__desctiption--para {
     font-size: 14px;
   }
-  project__description  {
+  project__description {
     left: 30px;
     padding-right: 30px;
   }
@@ -32,7 +32,6 @@ SMALL PHONES
     padding: 0;
     left: 0;
     width: 100%;
-  }
   }
   .project__description--para {
     display: none;
@@ -50,7 +49,7 @@ SMALL PHONES
     text-align: center;
     margin: 12px 0;
   }
-
+}
 * {
   font-family: "Roboto", sans-serif;
   padding: 0;
@@ -83,14 +82,13 @@ p {
   font-size: 16px;
 }
 
-i {
+a {
   text-decoration: none;
   position: relative;
-  transition: opacity 300ms ease;
 }
 
-a:hover {
-  opacity: 0.7;
+i {
+  transition: opacity 300ms ease;
 }
 
 .link__hover-effect::after {
@@ -225,21 +223,32 @@ nav {
 }
 
 @keyframes animate-profile-picture {
-  0% {transform: scale(0);}
-  80% {transform: scale(1.1);}
-  100% {transform: scale(1);}
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .wave {
   display: inline-block;
   animation: animate-wave 500ms infinite ease-in-out;
-
 }
 
 @keyframes animate-wave {
-  0% {transform: rotate(0)}
-  50% { transform: rotate(30deg)}
-  100% { transform: rotate(0)}
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 .about-me__picture {
   width: 100%;
@@ -250,11 +259,13 @@ nav {
   animation: fade-in 1200ms ease;
 }
 
-@keyframes fade-in { 
+@keyframes fade-in {
   0% {
-    opacity:0;
+    opacity: 0;
   }
-  100% { opacity: 1;}
+  100% {
+    opacity: 1;
+  }
 }
 
 .about-me__info--title {
@@ -279,10 +290,14 @@ nav {
 }
 
 @keyframes fade-up {
-  0%{ opacity: 0;
-  transform: translateY(40px);}
-  100%{opacity: 1;
-  transform: translateY(0);}
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .about-me__image--container {
@@ -476,6 +491,4 @@ footer {
   transition: all 300ms ease;
 }
 .footer__anchor:hover .footer__logo--popper {
-  transform: translateX(60px);
-  opacity: 1;
-}
+  transform: tra
